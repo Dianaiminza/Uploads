@@ -7,8 +7,8 @@ const expect = require("chai").expect;
     it("it should has status code 200 if the file is uploaded", function(done) {
      supertest(app)
      .post('/multiple')
-      .attach("file", "C:\\Users\\Captain\\Desktop\\Image\\testfiles\\health.jpg")
-      .attach("file", "C:\\Users\\Captain\\Desktop\\Image\\testfiles\\image.png")
+      .attach("file", `${__dirname}\\testfiles\\health.jpg`)
+      .attach("file", `${__dirname}\\testfiles\\health.jpg`)
       .expect(200)
       .end(function(err, res){
         if (err) done(err);
@@ -23,8 +23,8 @@ describe("POST /multiple", function() {
    .post('/multiple')
       // .attach("file", "C:\\Users\\Captain\\Pictures\\Saved Pictures\\health.jpg")
       // .attach("file", "C:\\Users\\Captain\\Pictures\\Saved Pictures\\coffee.jpg")
-      .attach("file", "C:\\Users\\Captain\\Desktop\\Image\\testfiles\\health.jpg")
-      .attach("file", "C:\\Users\\Captain\\Desktop\\Image\\testfiles\\image.png")
+      .attach("file", `${__dirname}\\testfiles\\health.jpg`)
+      .attach("file", `${__dirname}\\testfiles\\health.jpg`)
       .expect(200)
       .end(function(err, res){
         if (err) done(err);
@@ -36,8 +36,8 @@ describe("POST /multiple", function() {
    it("it should has status code 200 if the files are of type  png,jpg,jpeg", function(done) {
     supertest(app)
     .post('/multiple')
-    .attach("file", "C:\\Users\\Captain\\Desktop\\Image\\testfiles\\health.jpg")
-    .attach("file", "C:\\Users\\Captain\\Desktop\\Image\\testfiles\\image.png")
+    .attach("file",`${__dirname}\\testfiles\\health.jpg`)
+    .attach("file", `${__dirname}\\testfiles\\health.jpg`)
       // .attach("file", "C:\Users\Captain\Documents\CV.docx")
       .expect(200)
       .end(function(err, res){
