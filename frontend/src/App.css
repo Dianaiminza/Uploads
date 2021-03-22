@@ -1,0 +1,21 @@
+
+.dropzone {
+    text-align: center;
+    padding: 20px;
+    border: 3px dashed #eeeeee;
+    background-color: #fafafa;
+    color: #bdbdbd;
+  }
+  .image td, .cat th {
+  border: 1px solid rgb(36, 240, 17);
+  padding: 8px;
+}
+
+.image tr:nth-child(even){background-color: #f2f2f2;}
+
+.image tr:hover {background-color: #ddd;}
+
+.image th {
+  padding-top: 2px;
+  color: red;
+}
