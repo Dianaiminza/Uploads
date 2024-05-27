@@ -1,6 +1,16 @@
  # Uploads
- Upload is used to upload files, download and zip the files.
- 
+ This project provides functionality for uploading, downloading, and zipping files. It is built using Node.js and utilizes the multer middleware for handling file uploads. Tests are implemented using supertest.
+
+#Features
+-File Upload: Users can upload files to the server.
+-File Download: Users can download individual files from the server.
+-File Zipping: Users can download a zip archive of multiple files.
+
+#Technologies Used
+-Node.js: Backend runtime environment.
+-multer: Middleware for handling multipart/form-data, used for file uploads.
+-supertest: Framework for testing HTTP APIs.
+
  # Installation
  Clone repo to your local machine: 
  console git clone https://github.com/Dianaiminza/FileUpload/.git 
